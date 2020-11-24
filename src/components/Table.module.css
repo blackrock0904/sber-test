@@ -1,0 +1,9 @@
+.table {
+  color: #E0E1E2;
+  padding: 10px 30px 0px;
+  display: flex;
+  flex-direction: column;
+}
+.table > div:nth-child(2n) {
+  background-color: #1C252D;
+}
