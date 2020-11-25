@@ -1,6 +1,10 @@
-.delta   {
+.delta {
   padding: 0 auto;
   flex-grow: 1;
   text-align: center;
   min-width: 300px;
+}
+
+.cursorPointer {
+  cursor: pointer;
 }

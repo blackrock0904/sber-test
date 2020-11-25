@@ -9,14 +9,19 @@ import { Table } from './components/Table';
 
 
 function App() {
-  const [state, dispatch] = useReducer(reducer, data);
+  const initialState = {
+    rows: data.fa.fa_data.r, titles: data.fa.fa_data.axis.r, maxDelta: data.fa.fa_data.r.reduce((acc, el) => {
+      return (Math.abs(el.fDeltaPlan) > acc) ? Math.abs(el.fDeltaPlan) : acc;
+    }, 0)
+  }
+  const [state, dispatch] = useReducer(reducer, initialState);
 
   return (
-    <Context.Provider value={{state, dispatch}}>
+    <Context.Provider value={{ state, dispatch }}>
       <>
-        <img src={logo} />
-        <Header/>
-        <Table/>
+        {/* <img src={logo} /> */}
+        <Header />
+        <Table />
       </>
     </Context.Provider>
   );

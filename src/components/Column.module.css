@@ -2,3 +2,7 @@
   min-width: 200px;
   text-align: left;
 }
+
+.cursorPointer {
+  cursor: pointer;
+}
