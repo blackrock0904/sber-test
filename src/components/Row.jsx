@@ -1,9 +1,9 @@
 import React from 'react';
 import { Column } from './Column';
-import styles from './Row.module.css';
 import { Delta } from './Delta';
+import styles from './Row.module.css';
 
-export const Row = ({ columns, currency, delta, cursorPointer = false, setHandler = false }) => {
+export const Row = ({ columns, delta, cursorPointer = false, setHandler = false }) => {
 
   return (
     <div className={styles.row}>
@@ -16,11 +16,6 @@ export const Row = ({ columns, currency, delta, cursorPointer = false, setHandle
           indexArr={i}
         />
       )}
-      {/* <Column
-        content={currency}
-        setHandler={setHandler}
-        cursorPointer={cursorPointer}
-      /> */}
       <Delta
         setHandler={setHandler}
         cursorPointer={cursorPointer}

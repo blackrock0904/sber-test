@@ -1,0 +1,12 @@
+.deltaProgress {
+  display: flex;
+  align-items: center;
+}
+
+.deltaProgress > div {
+  min-width: 100px;
+}
+
+.deltaProgress > div:first-child, .deltaProgress > div:last-child {
+  flex-grow: 1;
+}

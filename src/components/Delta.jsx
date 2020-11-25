@@ -5,7 +5,8 @@ import { DeltaProgress } from './DeltaProgress';
 import { sort_delta } from '../store/actions';
 
 export const Delta = ({ content, setHandler, cursorPointer }) => {
-  const {dispatch} = useContext(Context);
+  const { dispatch } = useContext(Context);
+
   return (
     <div
       className={`${styles.delta} ${cursorPointer && styles.cursorPointer}`}

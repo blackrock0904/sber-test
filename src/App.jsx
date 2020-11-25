@@ -1,6 +1,4 @@
 import React, { useReducer } from 'react';
-import logo from './data/screen.png';
-import './App.css';
 import { Context } from './store/Context';
 import { reducer } from './store/reducer';
 import { Header } from './components/Header';
@@ -19,7 +17,6 @@ function App() {
   return (
     <Context.Provider value={{ state, dispatch }}>
       <>
-        {/* <img src={logo} /> */}
         <Header />
         <Table />
       </>

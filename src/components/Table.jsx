@@ -9,7 +9,7 @@ export const Table = () => {
   return (
     <div className={styles.table}>
       {state.rows.map(el => 
-        <Row columns={el.axis.r} currency='Все валюты' delta={el.fDeltaPlan}/>
+        <Row columns={el.axis.r} delta={el.fDeltaPlan}/>
       )}
     </div>
   );

@@ -1,4 +1,7 @@
 .row {
   display: flex;
-  padding: 10px 0px;
+  padding: 10px 30px;
+}
+.row > div {
+  overflow: hidden;
 }
